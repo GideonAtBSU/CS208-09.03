@@ -12,7 +12,7 @@ function myLineUp() {
     let checks = document.querySelectorAll('input[name="players"]:checked'); // grabs all node values
     let players= []
     for (let i = 0; i < checks.length; i++) { players.push(checks[i].value); } //changes the nodes into values
-    let myStr = "Status: " + status + "\nGame Date: " + gameDate + "\nPlayers: " + players;
+    let myStr = "Status: " + status + "\nGame Date: " + gameDate + "\nPlayers: " + (players.length ? players.join(", ") : "None");
     console.log(myStr);
     box.innerHTML = "<h1>Your Starting Lineup:</h1><p>" + myStr.replaceAll("\n", "<br>") + "</p>"
 }
