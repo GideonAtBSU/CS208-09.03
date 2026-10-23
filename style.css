@@ -1,0 +1,39 @@
+body{
+  height: 100vh;
+  background: radial-gradient(
+    
+    circle at bottom right in oklch,
+    #FF512F 10%, #F09819, #f6a168 25%, #45658a 50%, #021c3e
+  );
+  background-repeat: no-repeat;
+  background-size: auto;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+main {
+  padding: 20px 50px;
+  border-radius: 25px;
+  background-color: #ffffffd7;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.centered > *{
+  border: 0;
+  border-radius: 25px;
+  padding: 15px 25px;
+  color:whitesmoke;
+  background-color: #021c3e;
+  transition: transform 0.5s ease, border 0.5s ease;
+}
+
+.centered > *:hover{
+  border: 2px #1459b4 solid;
+  transform: scale(105%);
+}
